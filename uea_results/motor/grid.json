@@ -1,0 +1,100 @@
+{
+  "dataset": "MotorImagery",
+  "dataset_file_stem": "motorimagery_walker",
+  "selected": "av7.5_head0.294172_B16",
+  "grid_size": 18,
+  "swept_axes": {
+    "A_init_variance_multiplier": [
+      7.5,
+      8.0,
+      8.5
+    ],
+    "A_init_variance_base": 0.049975600187080506,
+    "A_init_variance_absolute": [
+      0.3748170014031038,
+      0.39980480149664405,
+      0.4247926015901843
+    ],
+    "head_init_scale": [
+      0.2941717115223339,
+      0.324172,
+      0.3541717115223339
+    ],
+    "B_out_dim": [
+      16,
+      18
+    ],
+    "label_smoothing_fixed": 0.534301481751482
+  },
+  "fixed_model": {
+    "A_parametrization": "skew_symmetric",
+    "A_init_type": "skew_symmetric",
+    "ews_depth": 3,
+    "M": 4,
+    "readout": "terminal",
+    "head_type": "linear",
+    "feature_norm": "learned_gain",
+    "van_loan_mode": "displacement_uniform",
+    "van_loan_expm": "euler",
+    "chen_expm": "exact",
+    "terminal_reduce": "tree",
+    "A_init_variance": 0.3748170014031038
+  },
+  "fixed_preprocessing": {
+    "normalize_paths": true,
+    "normalize_mode": "all_data",
+    "normalize_range": "[-1,1]",
+    "add_basepoint": false,
+    "clock_mode": "time",
+    "clock_alpha": 1.0,
+    "clock_scaling": "[-1,1]"
+  },
+  "fixed_training": {
+    "optimizer": "adam",
+    "lr_features": 0.0042813988343538304,
+    "lr_head": 0.0042813988343538304,
+    "lr_schedule": "constant",
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.534301481751482,
+    "batch_size": 16,
+    "num_steps": 12000,
+    "early_stopping_patience": 10000,
+    "grad_clip": 0.0
+  },
+  "regime": {
+    "autotune": "off",
+    "deterministic_ops": "on"
+  },
+  "selection": {
+    "metric": "best_val_accuracy",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "result": {
+    "method_B_5seed_val": 65.96,
+    "method_B_5seed_test": 61.05,
+    "test_population_sd": 5.01,
+    "per_seed_val": [
+      68.42,
+      64.91,
+      68.42,
+      64.91,
+      63.16
+    ],
+    "per_seed_test": [
+      59.65,
+      57.89,
+      64.91,
+      54.39,
+      68.42
+    ]
+  }
+}

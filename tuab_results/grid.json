@@ -1,0 +1,71 @@
+{
+ "dataset": "TUAB",
+ "definition": {
+  "axes": {
+   "dropout": [
+    0.1,
+    0.2,
+    0.3
+   ],
+   "lr": [
+    0.002,
+    0.003,
+    0.004
+   ],
+   "head_width": [
+    32,
+    64
+   ]
+  },
+  "n_cells": 18,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "selection": {
+   "metric": "val_auroc"
+  }
+ },
+ "selected": {
+  "dropout": 0.1,
+  "lr": 0.004,
+  "head_width": 32,
+  "params": 20250
+ },
+ "result": {
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "val_auroc": {
+   "mean": 0.8889,
+   "std": 0.002
+  },
+  "eval_auroc": {
+   "mean": 0.8824,
+   "std": 0.0028
+  },
+  "eval_balanced_accuracy": {
+   "mean": 79.9,
+   "std": 0.45
+  },
+  "per_seed_eval_auroc": [
+   0.8786,
+   0.8851,
+   0.8805,
+   0.886,
+   0.882
+  ],
+  "best_step": [
+   5000,
+   5000,
+   4000,
+   5000,
+   4000
+  ]
+ }
+}

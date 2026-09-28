@@ -1,0 +1,91 @@
+{
+  "dataset": "Heartbeat",
+  "dataset_file_stem": "heartbeat_walker",
+  "selected": "avar0.004_lr3e-4_B10",
+  "grid_size": 18,
+  "swept_axes": {
+    "A_init_variance": [
+      0.002,
+      0.004,
+      0.006
+    ],
+    "lr": [
+      0.0003,
+      0.0004,
+      0.0005
+    ],
+    "B_out_dim": [
+      8,
+      10
+    ]
+  },
+  "fixed_model": {
+    "A_parametrization": "unconstrained_rotation",
+    "ews_depth": 3,
+    "M": 4,
+    "head_init_scale": 0.35,
+    "readout": "mean",
+    "head_type": "linear",
+    "feature_norm": "learned_gain",
+    "chen_expm": "exact",
+    "van_loan_mode": "displacement",
+    "van_loan_expm": "euler",
+    "terminal_reduce": "tree"
+  },
+  "fixed_preprocessing": {
+    "path_representation": "value",
+    "path_derivative_order": 0,
+    "normalize_paths": true,
+    "normalize_mode": "all_data",
+    "normalize_range": "[0,1]",
+    "add_basepoint": true,
+    "clock_mode": "blended_variation",
+    "clock_alpha": 0.65,
+    "clock_scaling": "[-1,1]"
+  },
+  "fixed_training": {
+    "lr_schedule": "constant",
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.0,
+    "batch_size": 8,
+    "num_steps": 25000,
+    "early_stopping_patience": 10000
+  },
+  "regime": {
+    "autotune": "off",
+    "deterministic_ops": "on"
+  },
+  "selection": {
+    "metric": "best_val_accuracy",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "tiebreak": "val_loss"
+  },
+  "result": {
+    "method_B_5seed_val": 77.71,
+    "method_B_5seed_test": 80.0,
+    "test_population_sd": 4.52,
+    "per_seed_val": [
+      75.41,
+      86.89,
+      80.33,
+      75.41,
+      70.49
+    ],
+    "per_seed_test": [
+      72.58,
+      79.03,
+      79.03,
+      83.87,
+      85.48
+    ]
+  }
+}

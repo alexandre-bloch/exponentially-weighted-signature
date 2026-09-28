@@ -1,0 +1,111 @@
+{
+  "dataset": "data/oscillatory_kernel/oscillatory_kernel_seed0.npz",
+  "n_samples": 200,
+  "series_q": 12,
+  "planted": {
+    "T1_n1_series_float64": {
+      "nmse": 3.4680133461978944e-14,
+      "max_abs_err": 8.845265031184879e-08,
+      "max_abs_target": 0.26005038619041443,
+      "pass": true,
+      "series_regime_x": 0.6629674614975649
+    },
+    "T1_n1_van_loan_M8_float64": {
+      "nmse": 3.468013337066611e-14,
+      "max_abs_err": 8.845264922938134e-08,
+      "max_abs_target": 0.26005038619041443,
+      "pass": true,
+      "series_regime_x": 0.6629674614975649
+    },
+    "T1_n1_series_float32": {
+      "nmse": 5.072954720461842e-12,
+      "max_abs_err": 1.0281801223754883e-06,
+      "max_abs_target": 0.26005038619041443,
+      "pass": true,
+      "series_regime_x": 0.6629674333843868
+    },
+    "T1_n1_van_loan_M8_float32": {
+      "nmse": 5.017057114046664e-12,
+      "max_abs_err": 9.98377799987793e-07,
+      "max_abs_target": 0.26005038619041443,
+      "pass": true,
+      "series_regime_x": 0.6629674333843868
+    },
+    "T2_n2_series_float64": {
+      "nmse": 3.7391557887706164e-14,
+      "max_abs_err": 9.641579859151483e-09,
+      "max_abs_target": 0.02333240769803524,
+      "pass": true,
+      "series_regime_x": 0.6629674614975649
+    },
+    "T2_n2_van_loan_M8_float64": {
+      "nmse": 3.739155771223204e-14,
+      "max_abs_err": 9.641579801905609e-09,
+      "max_abs_target": 0.02333240769803524,
+      "pass": true,
+      "series_regime_x": 0.6629674614975649
+    },
+    "T2_n2_series_float32": {
+      "nmse": 1.1937909691257463e-11,
+      "max_abs_err": 8.754432201385498e-08,
+      "max_abs_target": 0.02333240769803524,
+      "pass": true,
+      "series_regime_x": 0.6629674333843868
+    },
+    "T2_n2_van_loan_M8_float32": {
+      "nmse": 1.3029660106813695e-11,
+      "max_abs_err": 9.12696123123169e-08,
+      "max_abs_target": 0.02333240769803524,
+      "pass": true,
+      "series_regime_x": 0.6629674333843868
+    }
+  },
+  "oracle": {
+    "n_samples": 20,
+    "sample_indices": [
+      4473,
+      3879,
+      7758,
+      2646,
+      7846,
+      857,
+      5580,
+      4133,
+      7520,
+      2967,
+      5025,
+      1213,
+      7772,
+      3226,
+      5519,
+      3052,
+      3246,
+      333,
+      916,
+      360
+    ],
+    "oversample": 64,
+    "max_rel_err": 6.39711162651019e-11,
+    "max_rel_err_per_freq": {
+      "2Hz": 4.5204953265009815e-15,
+      "4Hz": 3.286367248982677e-14,
+      "22Hz": 2.8223083492887452e-11,
+      "27Hz": 6.39711162651019e-11
+    },
+    "pass": true
+  },
+  "oscillations": {
+    "effective_window_s": 0.6,
+    "oscillations_in_window": {
+      "22Hz": 13.2,
+      "27Hz": 16.2
+    },
+    "efm_bound_nm_at_least": 33
+  },
+  "gate": {
+    "planted_T1_series_float64": true,
+    "planted_T2_series_float64": true,
+    "oracle": true
+  },
+  "all_pass": true
+}

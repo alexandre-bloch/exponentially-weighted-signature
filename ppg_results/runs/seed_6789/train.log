@@ -1,0 +1,87 @@
+[jordan_flows] block-kernel combine: closed-form Jordan-chain flows (installed in memory)
+[ppg_jordan] a_param jordan_repeated complex4, clock clamped_gate, grad_clip 0.0, extra {'jordan': 'complex4', 'init_variance': 1.0, 'omega_log_uniform_hi': 2.341}
+[ppg ews n=1 m=64 seed 6789] L=49920 d_in=7 clock norm_constant 4 (raw increments {'mean': 4.0, 'min': 4.0, 'max': 4.0, 'zero_frac': 0.0, 'a_spectral_radius': 1.9912022999593058, 'x_max_init': 1.9912022999593058})
+[ppg ews n=1 m=64 seed 6789] params 11109
+TrainTime: step 1000 secs 781.2915
+[ppg ews n=1 m=64 seed 6789] step 1000 loss 0.1558 train mse 0.1248 val mse 0.0848 (820s, 820 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.1427 (x1e-2: 14.27)
+TrainTime: step 2000 secs 680.3058
+[ppg ews n=1 m=64 seed 6789] step 2000 loss 0.1132 train mse 0.1165 val mse 0.0875 (702s, 702 ms/step incl. eval)
+TrainTime: step 3000 secs 643.2738
+[ppg ews n=1 m=64 seed 6789] step 3000 loss 0.1094 train mse 0.1056 val mse 0.0831 (662s, 662 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.1534 (x1e-2: 15.34)
+TrainTime: step 4000 secs 627.6031
+[ppg ews n=1 m=64 seed 6789] step 4000 loss 0.1051 train mse 0.1028 val mse 0.0676 (648s, 648 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.1219 (x1e-2: 12.19)
+TrainTime: step 5000 secs 627.1206
+[ppg ews n=1 m=64 seed 6789] step 5000 loss 0.0927 train mse 0.0998 val mse 0.0777 (648s, 648 ms/step incl. eval)
+TrainTime: step 6000 secs 631.1817
+[ppg ews n=1 m=64 seed 6789] step 6000 loss 0.0867 train mse 0.0856 val mse 0.0576 (650s, 650 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.1044 (x1e-2: 10.44)
+TrainTime: step 7000 secs 629.0221
+[ppg ews n=1 m=64 seed 6789] step 7000 loss 0.0810 train mse 0.0848 val mse 0.0570 (650s, 650 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0961 (x1e-2: 9.61)
+TrainTime: step 8000 secs 627.8247
+[ppg ews n=1 m=64 seed 6789] step 8000 loss 0.0794 train mse 0.0783 val mse 0.0638 (648s, 648 ms/step incl. eval)
+TrainTime: step 9000 secs 627.6850
+[ppg ews n=1 m=64 seed 6789] step 9000 loss 0.0761 train mse 0.0772 val mse 0.0507 (646s, 646 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0953 (x1e-2: 9.53)
+TrainTime: step 10000 secs 627.5806
+[ppg ews n=1 m=64 seed 6789] step 10000 loss 0.0747 train mse 0.0723 val mse 0.0510 (649s, 649 ms/step incl. eval)
+TrainTime: step 11000 secs 627.4880
+[ppg ews n=1 m=64 seed 6789] step 11000 loss 0.0709 train mse 0.0712 val mse 0.0457 (646s, 646 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0770 (x1e-2: 7.70)
+TrainTime: step 12000 secs 626.9047
+[ppg ews n=1 m=64 seed 6789] step 12000 loss 0.0682 train mse 0.0761 val mse 0.0482 (648s, 648 ms/step incl. eval)
+TrainTime: step 13000 secs 627.6797
+[ppg ews n=1 m=64 seed 6789] step 13000 loss 0.0660 train mse 0.0684 val mse 0.0497 (646s, 646 ms/step incl. eval)
+TrainTime: step 14000 secs 627.8602
+[ppg ews n=1 m=64 seed 6789] step 14000 loss 0.0638 train mse 0.0662 val mse 0.0461 (643s, 643 ms/step incl. eval)
+TrainTime: step 15000 secs 500.5140
+[ppg ews n=1 m=64 seed 6789] step 15000 loss 0.0614 train mse 0.0640 val mse 0.0426 (516s, 516 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0734 (x1e-2: 7.34)
+TrainTime: step 16000 secs 501.4297
+[ppg ews n=1 m=64 seed 6789] step 16000 loss 0.0610 train mse 0.0585 val mse 0.0434 (519s, 519 ms/step incl. eval)
+TrainTime: step 17000 secs 500.7605
+[ppg ews n=1 m=64 seed 6789] step 17000 loss 0.0591 train mse 0.0560 val mse 0.0433 (515s, 515 ms/step incl. eval)
+TrainTime: step 18000 secs 376.9044
+[ppg ews n=1 m=64 seed 6789] step 18000 loss 0.0573 train mse 0.0591 val mse 0.0387 (389s, 389 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0867 (x1e-2: 8.67)
+TrainTime: step 19000 secs 376.9689
+[ppg ews n=1 m=64 seed 6789] step 19000 loss 0.0567 train mse 0.0571 val mse 0.0401 (390s, 390 ms/step incl. eval)
+TrainTime: step 20000 secs 376.7156
+[ppg ews n=1 m=64 seed 6789] step 20000 loss 0.0542 train mse 0.0569 val mse 0.0370 (389s, 389 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0684 (x1e-2: 6.84)
+TrainTime: step 21000 secs 376.0057
+[ppg ews n=1 m=64 seed 6789] step 21000 loss 0.0606 train mse 0.0669 val mse 0.0436 (390s, 390 ms/step incl. eval)
+TrainTime: step 22000 secs 375.4617
+[ppg ews n=1 m=64 seed 6789] step 22000 loss 0.0541 train mse 0.0540 val mse 0.0383 (387s, 387 ms/step incl. eval)
+TrainTime: step 23000 secs 375.2923
+[ppg ews n=1 m=64 seed 6789] step 23000 loss 0.0524 train mse 0.0508 val mse 0.0380 (387s, 387 ms/step incl. eval)
+TrainTime: step 24000 secs 375.4410
+[ppg ews n=1 m=64 seed 6789] step 24000 loss 0.0526 train mse 0.0531 val mse 0.0367 (387s, 387 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789]   test mse 0.0651 (x1e-2: 6.51)
+TrainTime: step 25000 secs 376.0971
+[ppg ews n=1 m=64 seed 6789] step 25000 loss 0.0535 train mse 0.0592 val mse 0.0442 (390s, 390 ms/step incl. eval)
+TrainTime: step 26000 secs 375.9361
+[ppg ews n=1 m=64 seed 6789] step 26000 loss 0.0522 train mse 0.0508 val mse 0.0401 (385s, 385 ms/step incl. eval)
+TrainTime: step 27000 secs 248.7693
+[ppg ews n=1 m=64 seed 6789] step 27000 loss 0.0512 train mse 0.0535 val mse 0.0397 (257s, 257 ms/step incl. eval)
+TrainTime: step 28000 secs 248.6578
+[ppg ews n=1 m=64 seed 6789] step 28000 loss 0.0517 train mse 0.0515 val mse 0.0374 (257s, 257 ms/step incl. eval)
+TrainTime: step 29000 secs 248.7200
+[ppg ews n=1 m=64 seed 6789] step 29000 loss 0.0516 train mse 0.0508 val mse 0.0432 (257s, 257 ms/step incl. eval)
+TrainTime: step 30000 secs 248.5994
+[ppg ews n=1 m=64 seed 6789] step 30000 loss 0.0542 train mse 0.0501 val mse 0.0439 (257s, 257 ms/step incl. eval)
+TrainTime: step 31000 secs 248.7447
+[ppg ews n=1 m=64 seed 6789] step 31000 loss 0.0525 train mse 0.0558 val mse 0.0434 (257s, 257 ms/step incl. eval)
+TrainTime: step 32000 secs 250.8270
+[ppg ews n=1 m=64 seed 6789] step 32000 loss 0.0777 train mse 0.0654 val mse 0.0498 (259s, 259 ms/step incl. eval)
+TrainTime: step 33000 secs 248.6976
+[ppg ews n=1 m=64 seed 6789] step 33000 loss 0.0639 train mse 0.0623 val mse 0.0438 (257s, 257 ms/step incl. eval)
+TrainTime: step 34000 secs 249.7170
+[ppg ews n=1 m=64 seed 6789] step 34000 loss 0.0589 train mse 0.0707 val mse 0.0522 (258s, 258 ms/step incl. eval)
+TrainTime: step 35000 secs 249.0524
+[ppg ews n=1 m=64 seed 6789] step 35000 loss 0.0591 train mse 0.0619 val mse 0.0483 (258s, 258 ms/step incl. eval)
+[ppg ews n=1 m=64 seed 6789] early stop at 35000
+[ppg ews n=1 m=64 seed 6789] FINAL test mse 0.0650892032708334 (x1e-2 6.51) best step 24000 val 0.03667264968000161

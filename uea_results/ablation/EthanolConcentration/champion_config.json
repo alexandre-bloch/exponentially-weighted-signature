@@ -1,0 +1,114 @@
+{
+  "dataset": {
+    "file": "data/ethanolconcentration_walker/splits/ethanolconcentration_walker_seed0.npz"
+  },
+  "preprocessing": {
+    "dtype": "float32",
+    "path": {
+      "representation": "derivative",
+      "derivative_order": 1,
+      "derivative_window": 15,
+      "derivative_polyorder": 3,
+      "normalize": true,
+      "normalize_mode": "all_data",
+      "normalize_range": "[-1,1]",
+      "per_sample_normalize": false,
+      "per_sample_norm_stat": "std",
+      "basepoint": true,
+      "clock_channel": null
+    },
+    "clock": {
+      "mode": "time",
+      "scaling": "steps"
+    },
+    "append_clock": null
+  },
+  "model": {
+    "A": {
+      "parametrization": "damped_rotation",
+      "learn": true,
+      "init": {
+        "type": "sig",
+        "mean": 0.0,
+        "variance": 0.013664354731808851,
+        "sigma_range": 0.9228327328240815
+      },
+      "omega_scale": 0.2,
+      "damp_init_mean": -2.0,
+      "damp_init_std": 1.7115404791047912,
+      "blocks": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "B": {
+      "enabled": true,
+      "out_dim": 24,
+      "_preserve_first_channel": false,
+      "parametrization": "general",
+      "init": {
+        "type": "identity_block",
+        "mean": 0.0,
+        "variance": 1.0
+      },
+      "learn": true
+    },
+    "head_type": "linear",
+    "head_init_scale": 0.6836614417037384,
+    "readout": "terminal",
+    "feature_norm": "batchnorm",
+    "feature_norm_init": "rms",
+    "feature_norm_eval": "train",
+    "compute": {
+      "leaf": "plane_closed",
+      "van_loan_expm": "euler",
+      "chen_expm": "exact",
+      "M": 4,
+      "terminal_reduce": "tree",
+      "reweighting_mode": "displacement",
+      "combine": "assoc"
+    },
+    "depth": 2
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 8,
+    "num_steps": 12000,
+    "eval_every": 500,
+    "log_every": 1200,
+    "warmup_steps": 0,
+    "lr_features": 0.0025,
+    "min_lr_features": 0.0025,
+    "lr_head": 0.0025,
+    "min_lr_head": 0.0025,
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "grad_clip_features": 1000000000.0,
+    "grad_clip_head": 1000000000.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.0,
+    "metric": "accuracy",
+    "threshold": 0.5,
+    "early_stopping_patience": 10000,
+    "early_stopping_min_delta": 0.0
+  },
+  "dataset_file_stem": "ethanolconcentration_walker",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

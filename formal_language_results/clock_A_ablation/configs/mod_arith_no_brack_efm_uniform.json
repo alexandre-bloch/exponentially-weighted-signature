@@ -1,0 +1,147 @@
+{
+ "dataset": {
+  "task": "mod_arith_no_brack"
+ },
+ "model": {
+  "block": {
+   "A": {
+    "parametrization": "efm",
+    "positivity": "square",
+    "init": {
+     "type": "efm",
+     "mean": 0.0,
+     "variance": 1.0
+    },
+    "learn": true
+   },
+   "B": {
+    "enabled": true,
+    "init": {
+     "mean": 0.0,
+     "type": "identity_block",
+     "variance": 1.0
+    },
+    "out_dim": 64,
+    "parametrization": "general"
+   },
+   "channel_stage": "gelu_glu",
+   "clock": {
+    "gate_init_bias": -2.0,
+    "mode": "time",
+    "norm_constant": 29.4837,
+    "normalize": "constant",
+    "scaling": "none",
+    "source": "block_input",
+    "stop_gradient": false
+   },
+   "dropout_rate": 0.0,
+   "ff_mult": 4,
+   "graded_norm": "live_rms",
+   "m": 64,
+   "norm_placement": "pre",
+   "output_gate": false,
+   "path": {
+    "representation": "increment",
+    "basepoint": true
+   },
+   "compute": {
+    "van_loan_expm": "exact",
+    "chen_expm": "exact",
+    "M": 4,
+    "terminal_reduce": "tree",
+    "reweighting_mode": "displacement_uniform_basepoint"
+   },
+   "depth": 1
+  },
+  "blocks": [
+   {},
+   {
+    "A": {
+     "parametrization": "efm",
+     "positivity": "square",
+     "init": {
+      "type": "efm",
+      "mean": 0.0,
+      "variance": 1.0
+     },
+     "learn": true
+    },
+    "B": {
+     "enabled": true,
+     "init": {
+      "mean": 0.0,
+      "type": "identity_block",
+      "variance": 1.0
+     },
+     "out_dim": 24,
+     "parametrization": "general"
+    },
+    "channel_stage": "gelu_glu",
+    "clock": {
+     "alpha": 0.0,
+     "mode": "time",
+     "norm_constant": 29.4837,
+     "normalize": "constant",
+     "scaling": "none",
+     "source": "block_input",
+     "stop_gradient": false
+    },
+    "dropout_rate": 0.0,
+    "ff_mult": 4,
+    "graded_norm": "live_rms",
+    "m": 24,
+    "norm_placement": "pre",
+    "output_gate": false,
+    "path": {
+     "representation": "increment",
+     "basepoint": true
+    },
+    "compute": {
+     "van_loan_expm": "exact",
+     "chen_expm": "exact",
+     "M": 4,
+     "terminal_reduce": "tree",
+     "reweighting_mode": "displacement_uniform_basepoint"
+    },
+    "depth": 1
+   }
+  ],
+  "dtype": "float32",
+  "final_norm": false,
+  "graded_eps_init": "calibrated",
+  "head": "seq2seq",
+  "hidden_dim": 128,
+  "input_token_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "num_blocks": 2,
+  "token_cache": true,
+  "tokens": true
+ },
+ "training": {
+  "batch_size": 256,
+  "early_stop_threshold": 0.9995,
+  "final_lr": 1e-05,
+  "grad_clip": 1.0,
+  "label_smoothing": 0.1,
+  "learning_rate": 0.00488239,
+  "num_steps": 100001,
+  "print_steps": 5000,
+  "schedule": "cosine",
+  "seed": 1234,
+  "vf_A_norm_lambda": 0.001,
+  "warmup_fraction": 0.1,
+  "weight_decay_A": 0.0,
+  "weight_decay_embedding": 0.0,
+  "weight_decay_others": 0.01,
+  "checkpoint_every": 5000
+ }
+}

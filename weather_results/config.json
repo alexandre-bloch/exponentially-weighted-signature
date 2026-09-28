@@ -1,0 +1,45 @@
+{
+ "data": {
+  "seq_len": 720,
+  "pred_len": 720,
+  "include_time": true,
+  "marks": "full"
+ },
+ "model": {
+  "depth": 1,
+  "m": 64,
+  "hidden": 64,
+  "num_blocks": 1,
+  "a_param": "jordan_repeated",
+  "damp_init": -1.2072473343969403,
+  "omega_scale": 1.8,
+  "sigma_range": 0.55,
+  "clock": "time",
+  "dropout": 0.15,
+  "leaf": "series",
+  "series_q_max": 48,
+  "chunk": 480,
+  "path_mode": "increment",
+  "basepoint": true,
+  "jordan": "complex4",
+  "init_variance": 0.05785986327378936,
+  "omega_log_uniform_hi": 0.9179713280828584
+ },
+ "training": {
+  "lr": 5e-05,
+  "lr_mult_A": 1.0,
+  "a_warmup": 0,
+  "lr_mult_clock": 1.0,
+  "wd": 0.0,
+  "wd_A": 0.0,
+  "grad_clip": 0.0,
+  "batch_size": 16,
+  "num_steps": 100000,
+  "print_steps": 1000,
+  "patience": 10,
+  "xla_autotune": false,
+  "deterministic_ops": false,
+  "loss": "l1",
+  "select": "val_mae"
+ }
+}

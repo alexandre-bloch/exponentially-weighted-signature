@@ -1,0 +1,77 @@
+{
+ "dataset": {
+  "file": "data/oscillatory_kernel/oscillatory_kernel_seed0.npz",
+  "target": "T2"
+ },
+ "preprocessing": {
+  "dtype": "float32",
+  "path": {
+   "representation": "value",
+   "normalize": false,
+   "basepoint": false,
+   "clock_channel": null
+  },
+  "clock": {
+   "mode": "time",
+   "scaling": "none"
+  }
+ },
+ "model": {
+  "A": {
+   "parametrization": "sig",
+   "learn": false
+  },
+  "B": {
+   "enabled": true,
+   "out_dim": 4,
+   "_preserve_first_channel": false,
+   "init": {
+    "type": "general",
+    "mean": 0.0,
+    "variance": 1.0
+   },
+   "learn": true
+  },
+  "compute": {
+   "leaf": "series",
+   "series_q": 12,
+   "chen_expm": "exact",
+   "reweighting_mode": "displacement_uniform",
+   "terminal_reduce": "assoc"
+  },
+  "depth": 2,
+  "head_type": "linear"
+ },
+ "training": {
+  "seed": 1,
+  "batch_size": 64,
+  "num_steps": 12000,
+  "eval_every": 500,
+  "log_every": 500,
+  "warmup_steps": 0,
+  "lr_features": 0.001,
+  "lr_head": 0.002,
+  "min_lr_features": 1e-05,
+  "min_lr_head": 1e-05,
+  "early_stopping_patience": 2000,
+  "early_stopping_min_delta": 0.0
+ },
+ "experiment": {
+  "init": {
+   "rate_range": [
+    0.5,
+    50.0
+   ],
+   "freq_range_hz": [
+    1.0,
+    40.0
+   ]
+  },
+  "readout_init": "zero",
+  "lr_lift": 0.002,
+  "grad_clip_global": 1.0,
+  "eval_batch_size": 250,
+  "max_run_minutes": 30.0,
+  "reduced_num_steps": 6000
+ }
+}

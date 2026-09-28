@@ -1,0 +1,82 @@
+{
+  "dataset": {
+    "file": "data/selfregulationscp1_walker/splits/selfregulationscp1_walker_seed0.npz"
+  },
+  "preprocessing": {
+    "clock_normalize": "[-1,1]",
+    "clock_mode": "blended_variation",
+    "clock_alpha": 0.0,
+    "append_clock_mode": null,
+    "append_clock_alpha": 1.0,
+    "augment_with_clock": false,
+    "normalize_paths": true,
+    "normalize_mode": "all_data",
+    "normalize_range": "[-1,1]",
+    "add_basepoint": false,
+    "dtype": "float32"
+  },
+  "model": {
+    "van_loan_mode": "displacement_uniform",
+    "ews_depth": 2,
+    "M": 4,
+    "terminal_reduce": "tree",
+    "van_loan_expm": "euler",
+    "chen_expm": "cayley",
+    "A": {
+      "parametrization": "skew_symmetric",
+      "learn": true,
+      "init": {
+        "type": "skew_symmetric",
+        "mean": 0.0,
+        "variance": 0.010095
+      }
+    },
+    "B": {
+      "enabled": true,
+      "out_dim": 17,
+      "_preserve_first_channel": false,
+      "parametrization": "general",
+      "init": {
+        "type": "identity_block",
+        "mean": 0.0,
+        "variance": 1.0
+      },
+      "learn": true
+    },
+    "head_type": "linear",
+    "head_init_scale": 0.25,
+    "readout": "mean",
+    "feature_norm": "learned_gain"
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 32,
+    "num_steps": 25000,
+    "eval_every": 1000,
+    "log_every": 2400,
+    "warmup_steps": 0,
+    "lr_features": 0.0025,
+    "min_lr_features": 0.0025,
+    "lr_head": 0.0025,
+    "min_lr_head": 0.0025,
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "grad_clip_features": 1000000000.0,
+    "grad_clip_head": 1000000000.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.0,
+    "metric": "accuracy",
+    "threshold": 0.5,
+    "early_stopping_patience": 10000,
+    "early_stopping_min_delta": 0.0
+  },
+  "dataset_file_stem": "selfregulationscp1_walker",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

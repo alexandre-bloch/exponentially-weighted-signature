@@ -1,0 +1,129 @@
+{
+ "dataset": "EigenWorms",
+ "dataset_file_stem": "eigenworms_walker",
+ "selected": "grid_lr0.00454532_w8_d0.294083",
+ "grid_size": 27,
+ "swept_axes": {
+  "lr": [
+   0.0045453225545316125,
+   0.006817983831797419,
+   0.010226975747696128
+  ],
+  "width": [
+   8,
+   12,
+   16
+  ],
+  "damp_per_token": [
+   0.14704153617405344,
+   0.2940830723481069,
+   0.5881661446962138
+  ]
+ },
+ "fixed_model": {
+  "A_parametrization": "jordan_repeated",
+  "A_kinds": [
+   "complex",
+   "complex"
+  ],
+  "A_blocks": [
+   4,
+   4
+  ],
+  "A_init_type": "jordan_repeated",
+  "A_init_variance": 0.3163607951725365,
+  "A_omega_log_uniform_hi": 0.07893429161683238,
+  "ews_depth": 2,
+  "M": 4,
+  "readout": "mean",
+  "head_type": "linear",
+  "head_init_scale": 0.3680000752068971,
+  "feature_norm": "learned_gain",
+  "reweighting_mode": "displacement",
+  "van_loan_expm": "euler",
+  "chen_expm": "exact",
+  "terminal_reduce": "tree",
+  "leaf": "jordan_closed",
+  "combine": "block_kernel"
+ },
+ "fixed_preprocessing": {
+  "path_representation": "value",
+  "path_derivative_order": 0,
+  "normalize_paths": true,
+  "normalize_mode": "all_data",
+  "normalize_range": "[0,1]",
+  "add_basepoint": false,
+  "clock_channel": "main",
+  "clock_mode": "clamped_gate",
+  "clock_scaling": "none",
+  "clock_source": "block_input",
+  "clock_normalize": "constant",
+  "clock_norm_constant": 1.299682963044348,
+  "clock_gate_init_scale": 0.7902724958928227,
+  "clock_gate_init_bias": [
+   -0.6268563389768782,
+   -0.3107473406197491,
+   0.00536165773737996,
+   0.321470656094509
+  ],
+  "clock_gate_K": 4,
+  "clock_gate_in_scale": 1449.7872884248034
+ },
+ "fixed_training": {
+  "optimizer": "adam",
+  "lr_schedule": "constant",
+  "weight_decay_features": 0.0,
+  "weight_decay_head": 0.0,
+  "clock_parameters": "trained",
+  "lambda1": 0.0,
+  "lambda2": 0.0,
+  "label_smoothing": 0.0,
+  "batch_size": 4,
+  "num_steps": 6000,
+  "eval_every": 1000,
+  "early_stopping_patience": 1000000000,
+  "grad_clip": 0.0
+ },
+ "regime": {
+  "autotune": "off",
+  "deterministic_ops": "on"
+ },
+ "selection": {
+  "metric": "best_val_accuracy",
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "tiebreak": "val_loss"
+ },
+ "result": {
+  "method_B_5seed_val": 96.0,
+  "method_B_5seed_test": 93.33,
+  "test_population_sd": 1.36,
+  "per_seed_val": [
+   94.29,
+   97.14,
+   91.43,
+   97.14,
+   100.0
+  ],
+  "per_seed_test": [
+   91.67,
+   94.44,
+   94.44,
+   91.67,
+   94.44
+  ],
+  "per_seed_best_step": [
+   2000,
+   6000,
+   6000,
+   3000,
+   2000
+  ],
+  "params": 446
+ }
+}

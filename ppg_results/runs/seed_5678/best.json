@@ -1,0 +1,61 @@
+{
+  "step": 3000,
+  "val_mse": 0.03964916363676126,
+  "test_mse": 0.05107819927805126,
+  "seed": 5678,
+  "config": {
+    "data": {
+      "variant": "walker",
+      "include_time": true,
+      "T": 1.0,
+      "output_step": 128
+    },
+    "model": {
+      "depth": 1,
+      "m": 64,
+      "hidden": 16,
+      "num_blocks": 4,
+      "a_param": "jordan_repeated",
+      "clock": "clamped_gate",
+      "omega_scale": 2.341,
+      "damp_init": -4.671,
+      "sigma_range": 0.284,
+      "leaf": "jordan_closed",
+      "series_q_max": 48,
+      "engine": "generic",
+      "chunk": 4992,
+      "dropout": 0.2,
+      "remat": true,
+      "jordan": "complex4",
+      "init_variance": 1.0,
+      "omega_log_uniform_hi": 2.341
+    },
+    "training": {
+      "lr": 0.00025,
+      "wd": 0.0,
+      "schedule": "constant",
+      "warmup": 0.1,
+      "grad_clip": 0.0,
+      "batch": 8,
+      "micro_batch": 0,
+      "num_steps": 100000,
+      "print_steps": 1000,
+      "patience": 10,
+      "eval_batches": 100
+    },
+    "seed": 5678,
+    "norm_constant": 3.999999559743262,
+    "params": 11109,
+    "series_q": null,
+    "clock_calibration": {
+      "mean": 3.999999559743262,
+      "min": 3.9367976836510934,
+      "max": 4.0,
+      "zero_frac": 0.0,
+      "a_spectral_radius": 2.2771139656983728,
+      "x_max_init": 2.2771142163270923
+    },
+    "d_in": 7,
+    "L": 49920
+  }
+}

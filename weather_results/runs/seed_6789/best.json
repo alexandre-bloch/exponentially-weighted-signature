@@ -1,0 +1,69 @@
+{
+  "step": 22000,
+  "val_mae": 0.594932842589867,
+  "val_mse": 0.7276575465124323,
+  "test_mae": 0.4716984044638514,
+  "test_mse": 0.5032279572596111,
+  "seed": 6789,
+  "config": {
+    "data": {
+      "seq_len": 720,
+      "pred_len": 720,
+      "include_time": true,
+      "marks": "full"
+    },
+    "model": {
+      "depth": 1,
+      "m": 64,
+      "hidden": 64,
+      "num_blocks": 1,
+      "a_param": "jordan_repeated",
+      "damp_init": -1.2072473343969403,
+      "omega_scale": 1.8,
+      "sigma_range": 0.55,
+      "clock": "time",
+      "dropout": 0.15,
+      "leaf": "series",
+      "series_q_max": 48,
+      "chunk": 480,
+      "path_mode": "increment",
+      "basepoint": true,
+      "jordan": "complex4",
+      "init_variance": 0.05785986327378936,
+      "omega_log_uniform_hi": 0.9179713280828584
+    },
+    "training": {
+      "lr": 5e-05,
+      "lr_mult_A": 1.0,
+      "a_warmup": 0,
+      "lr_mult_clock": 1.0,
+      "wd": 0.0,
+      "wd_A": 0.0,
+      "grad_clip": 0.0,
+      "batch_size": 16,
+      "num_steps": 100000,
+      "print_steps": 1000,
+      "patience": 10,
+      "xla_autotune": false,
+      "deterministic_ops": false,
+      "loss": "l1",
+      "select": "val_mae"
+    },
+    "seed": 6789,
+    "norm_constant": 1.0,
+    "params": 18669,
+    "series_q": null,
+    "clock_calibration": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "zero_frac": 0.0,
+      "a_spectral_radius": 0.8622492232459634,
+      "x_max_init": 0.8622492232459634
+    },
+    "d_in": 17,
+    "d_out": 12
+  },
+  "status": "ok",
+  "peak_bytes_in_use": 334345984
+}

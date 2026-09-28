@@ -1,0 +1,86 @@
+# Large binary data (gitignored — see data/README.md for how to obtain)
+data/**/*.npz
+# generation metadata written next to the generated regression data
+data/sde_a/*.json
+data/sde_d/*.json
+# ...and the paths themselves: the generated SDE data is 3.7 GB, so a checkout may keep it on a local
+# scratch disk with data/sde_a and data/sde_d as symlinks to it. A symlink is a file, not a directory, so
+# the two patterns above stop matching and git offers the link itself as a new file. The link target is
+# machine-local and would not resolve in a fresh clone.
+data/sde_a
+data/sde_d
+data/tuab
+data/oscillatory_kernel/*.json
+data/**/*.arff
+data/**/*.pkl
+data/weather/*.csv
+data/eigenworms/raw/
+# Per-seed split outputs (regenerable from make_*_splits.py): keep local
+data/**/splits/
+
+# Local outputs (keep locally, never push)
+outputs/
+# One-off scratch scripts (kept locally, never push)
+_scratch/
+
+# Work in progress kept locally, not part of this repo
+chunked_scan/
+warmstart/
+slabkernel/
+# Triton IR dumped while developing the slab kernel
+*.ttir
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Logs and checkpoints
+logs/
+*.log
+*.eqx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Venv
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Raw UEA/aeon datasets (large — fetch via download scripts, never push)
+data/_aeon_cache/
+data/**/*.ts
+
+# Optuna sweep DBs, JAX cache, drafts, tool/editor state
+*.db
+.jax_cache/
+**/.jax_cache/
+*.pdf
+
+# ruff / pytest caches
+.ruff_cache/
+.pytest_cache/
+data/ppg/processed/
+data/ppg/processed_walker/
+data/ppg/raw/
+
+# banked runs keep their checkpoints and training logs (small; part of the result banks)
+!weather_results/**/*.eqx
+!weather_results/**/*.log
+!ppg_results/**/*.eqx
+!ppg_results/**/*.log
+!formal_language_results/**/*.log
+
+# BIDMC lane: working folder, not part of the repository
+bidmc/

@@ -1,0 +1,109 @@
+{
+  "dataset": {
+    "file": "data/eigenworms_walker/splits/eigenworms_walker_seed0.npz"
+  },
+  "preprocessing": {
+    "dtype": "float32",
+    "path": {
+      "representation": "value",
+      "derivative_order": 0,
+      "derivative_window": 15,
+      "derivative_polyorder": 3,
+      "normalize": true,
+      "normalize_mode": "all_data",
+      "normalize_range": "[0,1]",
+      "per_sample_normalize": false,
+      "per_sample_norm_stat": "std",
+      "basepoint": false,
+      "clock_channel": "main"
+    },
+    "clock": {
+      "mode": "blended_learn",
+      "scaling": "[-1,1]",
+      "source": "encoder_output",
+      "alpha": 0.408502273746444,
+      "learn": false
+    },
+    "append_clock": null
+  },
+  "model": {
+    "van_loan_mode": "displacement_uniform",
+    "ews_depth": 2,
+    "M": 4,
+    "terminal_reduce": "tree",
+    "van_loan_expm": "euler",
+    "chen_expm": "exact",
+    "A": {
+      "parametrization": "stable_block",
+      "learn": true,
+      "init": {
+        "type": "stable_block",
+        "mean": 0.0,
+        "variance": 0.15174327340616436,
+        "sigma_range": 0.34398778347300724
+      },
+      "omega_scale": 5.949754495439764,
+      "damp_init_mean": 500.0,
+      "damp_init_std": 53.515097636542734,
+      "shear_init_mean": 0.39620315599770345,
+      "shear_init_std": 2.3855801170739674,
+      "blocks": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "B": {
+      "enabled": true,
+      "out_dim": 8,
+      "_preserve_first_channel": true,
+      "parametrization": "general",
+      "init": {
+        "type": "identity_block",
+        "mean": 0.0,
+        "variance": 1.0
+      },
+      "learn": true
+    },
+    "head_type": "linear",
+    "head_init_scale": 0.08648254183228872,
+    "readout": "mean",
+    "feature_norm": "learned_gain",
+    "leaf": "van_loan",
+    "compute": {
+      "combine": "block_kernel"
+    }
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 4,
+    "num_steps": 10000,
+    "eval_every": 1000,
+    "log_every": 10000,
+    "warmup_steps": 0,
+    "lr_features": 0.02,
+    "min_lr_features": 0.02,
+    "lr_head": 0.02,
+    "min_lr_head": 0.02,
+    "weight_decay_features": 0.00011748043456093103,
+    "weight_decay_head": 2.3473845494262653e-05,
+    "grad_clip_features": 1000000000.0,
+    "grad_clip_head": 1000000000.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.019009472698730608,
+    "metric": "accuracy",
+    "threshold": 0.5,
+    "early_stopping_patience": 1000000000,
+    "early_stopping_min_delta": 0.0
+  },
+  "dataset_file_stem": "eigenworms_walker",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

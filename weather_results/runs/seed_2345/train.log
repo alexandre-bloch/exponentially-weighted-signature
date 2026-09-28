@@ -1,0 +1,55 @@
+[weather seed 2345] clock norm_constant 1 (raw increments {'mean': 1.0, 'min': 1.0, 'max': 1.0, 'zero_frac': 0.0, 'a_spectral_radius': 0.7986235097535843, 'x_max_init': 0.7986235097535843})
+[weather seed 2345] params 18669 (A group 32); lr 5e-05, lr_A x1 (warmup 0), wd 0.0 / wd_A 0.0, batch 16, loss l1, select val_mae, patience 10
+[weather seed 2345] step 1000 loss 0.7316 train 0.6156/0.8103 val 0.8569/1.2732 (train 31.4 ms/step, 44s total)
+[weather seed 2345]   test mae/mse 0.6594/0.8027
+[weather seed 2345] step 2000 loss 0.5812 train 0.6012/0.7879 val 0.6342/0.8053 (train 14.8 ms/step, 64s total)
+[weather seed 2345]   test mae/mse 0.4911/0.5192
+[weather seed 2345] step 3000 loss 0.5303 train 0.5928/0.7774 val 0.6214/0.7801 (train 15.8 ms/step, 87s total)
+[weather seed 2345]   test mae/mse 0.4827/0.5143
+[weather seed 2345] step 4000 loss 0.5186 train 0.5911/0.7766 val 0.6162/0.7709 (train 15.3 ms/step, 110s total)
+[weather seed 2345]   test mae/mse 0.4798/0.5130
+[weather seed 2345] step 5000 loss 0.5125 train 0.5875/0.7700 val 0.6121/0.7589 (train 15.9 ms/step, 134s total)
+[weather seed 2345]   test mae/mse 0.4753/0.5043
+[weather seed 2345] step 6000 loss 0.5083 train 0.5827/0.7605 val 0.6121/0.7622 (train 15.3 ms/step, 156s total)
+[weather seed 2345]   test mae/mse 0.4742/0.5054
+[weather seed 2345] step 7000 loss 0.5053 train 0.5793/0.7551 val 0.6087/0.7550 (train 15.5 ms/step, 179s total)
+[weather seed 2345]   test mae/mse 0.4746/0.5083
+[weather seed 2345] step 8000 loss 0.5014 train 0.5815/0.7602 val 0.6100/0.7557 (train 15.8 ms/step, 203s total)
+[weather seed 2345] step 9000 loss 0.5004 train 0.5820/0.7612 val 0.6075/0.7506 (train 17.1 ms/step, 224s total)
+[weather seed 2345]   test mae/mse 0.4718/0.5051
+[weather seed 2345] step 10000 loss 0.4982 train 0.5803/0.7587 val 0.6048/0.7499 (train 16.5 ms/step, 247s total)
+[weather seed 2345]   test mae/mse 0.4730/0.5095
+[weather seed 2345] step 11000 loss 0.4971 train 0.5786/0.7541 val 0.6032/0.7413 (train 15.6 ms/step, 269s total)
+[weather seed 2345]   test mae/mse 0.4702/0.5015
+[weather seed 2345] step 12000 loss 0.4937 train 0.5816/0.7615 val 0.6052/0.7537 (train 15.8 ms/step, 291s total)
+[weather seed 2345] step 13000 loss 0.4946 train 0.5773/0.7545 val 0.6025/0.7433 (train 15.7 ms/step, 310s total)
+[weather seed 2345]   test mae/mse 0.4709/0.5053
+[weather seed 2345] step 14000 loss 0.4930 train 0.5776/0.7539 val 0.6006/0.7380 (train 16.1 ms/step, 333s total)
+[weather seed 2345]   test mae/mse 0.4699/0.5019
+[weather seed 2345] step 15000 loss 0.4917 train 0.5772/0.7553 val 0.6007/0.7418 (train 15.7 ms/step, 355s total)
+[weather seed 2345] step 16000 loss 0.4919 train 0.5788/0.7580 val 0.5990/0.7372 (train 15.3 ms/step, 374s total)
+[weather seed 2345]   test mae/mse 0.4716/0.5065
+[weather seed 2345] step 17000 loss 0.4892 train 0.5773/0.7557 val 0.5984/0.7364 (train 16.4 ms/step, 398s total)
+[weather seed 2345]   test mae/mse 0.4718/0.5072
+[weather seed 2345] step 18000 loss 0.4900 train 0.5787/0.7572 val 0.5957/0.7314 (train 15.5 ms/step, 421s total)
+[weather seed 2345]   test mae/mse 0.4711/0.5055
+[weather seed 2345] step 19000 loss 0.4900 train 0.5814/0.7620 val 0.5968/0.7320 (train 16.5 ms/step, 444s total)
+[weather seed 2345] step 20000 loss 0.4887 train 0.5786/0.7572 val 0.5953/0.7269 (train 16.5 ms/step, 465s total)
+[weather seed 2345]   test mae/mse 0.4703/0.5023
+[weather seed 2345] step 21000 loss 0.4869 train 0.5802/0.7611 val 0.5969/0.7329 (train 17.0 ms/step, 489s total)
+[weather seed 2345] step 22000 loss 0.4883 train 0.5802/0.7628 val 0.5953/0.7332 (train 17.1 ms/step, 510s total)
+[weather seed 2345]   test mae/mse 0.4765/0.5156
+[weather seed 2345] step 23000 loss 0.4867 train 0.5765/0.7553 val 0.5952/0.7285 (train 16.8 ms/step, 535s total)
+[weather seed 2345]   test mae/mse 0.4722/0.5058
+[weather seed 2345] step 24000 loss 0.4872 train 0.5796/0.7600 val 0.5963/0.7316 (train 15.4 ms/step, 558s total)
+[weather seed 2345] step 25000 loss 0.4857 train 0.5798/0.7629 val 0.5957/0.7295 (train 16.4 ms/step, 579s total)
+[weather seed 2345] step 26000 loss 0.4864 train 0.5823/0.7665 val 0.5964/0.7297 (train 16.2 ms/step, 599s total)
+[weather seed 2345] step 27000 loss 0.4850 train 0.5790/0.7616 val 0.5958/0.7273 (train 16.3 ms/step, 619s total)
+[weather seed 2345] step 28000 loss 0.4860 train 0.5802/0.7627 val 0.5959/0.7308 (train 16.2 ms/step, 640s total)
+[weather seed 2345] step 29000 loss 0.4850 train 0.5872/0.7770 val 0.5968/0.7379 (train 16.0 ms/step, 660s total)
+[weather seed 2345] step 30000 loss 0.4837 train 0.5814/0.7657 val 0.5957/0.7284 (train 16.9 ms/step, 681s total)
+[weather seed 2345] step 31000 loss 0.4859 train 0.5796/0.7623 val 0.5958/0.7305 (train 16.4 ms/step, 702s total)
+[weather seed 2345] step 32000 loss 0.4837 train 0.5800/0.7632 val 0.5982/0.7311 (train 16.7 ms/step, 723s total)
+[weather seed 2345] step 33000 loss 0.4839 train 0.5796/0.7616 val 0.5963/0.7291 (train 16.4 ms/step, 743s total)
+[weather seed 2345] early stop at 33000
+[weather seed 2345] FINAL status ok test mae 0.47219084050700155 mse 0.5058006019117991 (best step 23000, val 0.5952014302540402/0.7284758978385758) peak_gb 0.31

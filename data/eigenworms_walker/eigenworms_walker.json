@@ -1,0 +1,26 @@
+{
+  "dataset": "EigenWorms",
+  "task_type": "multiclass",
+  "n_classes": 5,
+  "class_names": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "n_train": 165,
+  "n_val": 35,
+  "n_test": 36,
+  "T": 17984,
+  "d": 6,
+  "seed": 0,
+  "walker_seed": 2345,
+  "N_pool": 236,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "deduplicated": true,
+  "split": "walker_jax_70_15_15",
+  "protocol": "walker_exact_jax_rng",
+  "non_degenerate": true
+}

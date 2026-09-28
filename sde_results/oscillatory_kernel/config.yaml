@@ -1,0 +1,237 @@
+experiment: oscillatory_kernel
+data:
+  file: data/oscillatory_kernel/oscillatory_kernel_seed0.npz
+  T: 256
+  bank_hz:
+  - 2.0
+  - 4.0
+  - 22.0
+  - 27.0
+  damping: 5.0
+  train_val_test:
+  - 8000
+  - 1000
+  - 1000
+  data_seed: 0
+path:
+  representation: value
+  normalize: false
+  basepoint: false
+  clock_channel: null
+clock:
+  mode: time
+  scaling: none
+dtype: float32
+models:
+  sig:
+    parametrization: sig
+    learn: false
+  efm:
+    parametrization: efm
+    positivity: softplus
+    learn: true
+  ews:
+    parametrization: damped_rotation
+    omega_scale: 314.1592653589793
+    learn: true
+lift_B:
+  enabled: true
+  out_dim: 8
+  _preserve_first_channel: false
+  init:
+    type: general
+    mean: 0.0
+    variance: 1.0
+  learn: true
+compute:
+  leaf: series
+  series_q: 12
+  chen_expm: exact
+  reweighting_mode: displacement_uniform
+  terminal_reduce: assoc
+readout: linear on the flat levels 1..n (level 0 dropped); logistic for T3
+grid:
+- model: sig
+  n: 1
+  m: 2
+  D: 2
+- model: sig
+  n: 1
+  m: 4
+  D: 4
+- model: sig
+  n: 1
+  m: 8
+  D: 8
+- model: sig
+  n: 1
+  m: 16
+  D: 16
+- model: sig
+  n: 2
+  m: 2
+  D: 6
+- model: sig
+  n: 2
+  m: 4
+  D: 20
+- model: sig
+  n: 2
+  m: 8
+  D: 72
+- model: sig
+  n: 2
+  m: 16
+  D: 272
+- model: sig
+  n: 3
+  m: 2
+  D: 14
+- model: sig
+  n: 3
+  m: 4
+  D: 84
+- model: sig
+  n: 3
+  m: 8
+  D: 584
+- model: sig
+  n: 3
+  m: 16
+  D: 4368
+- model: sig
+  n: 4
+  m: 2
+  D: 30
+- model: sig
+  n: 4
+  m: 4
+  D: 340
+- model: sig
+  n: 4
+  m: 8
+  D: 4680
+- model: efm
+  n: 1
+  m: 2
+  D: 2
+- model: efm
+  n: 1
+  m: 4
+  D: 4
+- model: efm
+  n: 1
+  m: 8
+  D: 8
+- model: efm
+  n: 1
+  m: 16
+  D: 16
+- model: efm
+  n: 1
+  m: 32
+  D: 32
+- model: efm
+  n: 1
+  m: 64
+  D: 64
+- model: efm
+  n: 2
+  m: 2
+  D: 6
+- model: efm
+  n: 2
+  m: 4
+  D: 20
+- model: efm
+  n: 2
+  m: 8
+  D: 72
+- model: efm
+  n: 2
+  m: 16
+  D: 272
+- model: efm
+  n: 2
+  m: 32
+  D: 1056
+- model: efm
+  n: 2
+  m: 64
+  D: 4160
+- model: efm
+  n: 3
+  m: 2
+  D: 14
+- model: efm
+  n: 3
+  m: 4
+  D: 84
+- model: efm
+  n: 3
+  m: 8
+  D: 584
+- model: efm
+  n: 3
+  m: 16
+  D: 4368
+- model: ews
+  n: 1
+  m: 8
+  D: 8
+- model: ews
+  n: 1
+  m: 16
+  D: 16
+- model: ews
+  n: 1
+  m: 32
+  D: 32
+- model: ews
+  n: 2
+  m: 8
+  D: 72
+- model: ews
+  n: 2
+  m: 16
+  D: 272
+- model: ews
+  n: 2
+  m: 32
+  D: 1056
+D_cap: 5000
+targets:
+- T1
+- T2
+- T3
+seeds:
+- 0
+- 1
+- 2
+training:
+  seed: 0
+  batch_size: 64
+  num_steps: 12000
+  eval_every: 500
+  log_every: 500
+  warmup_steps: 0
+  lr_features: 0.001
+  lr_head: 0.002
+  min_lr_features: 1.0e-05
+  min_lr_head: 1.0e-05
+  early_stopping_patience: 2000
+  early_stopping_min_delta: 0.0
+experiment_section:
+  init:
+    rate_range:
+    - 1.0
+    - 25.0
+    freq_range_hz:
+    - 1.0
+    - 40.0
+  readout_init: zero
+  lr_lift: 0.002
+  grad_clip_global: 1.0
+  eval_batch_size: 250
+  max_run_minutes: 30.0
+  reduced_num_steps: 6000

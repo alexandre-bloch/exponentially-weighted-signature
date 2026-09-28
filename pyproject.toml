@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ews"
+version = "0.1.0"
+description = "Exponentially Weighted Signature"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ews*", "experiments*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["ews/conversion/reference/vendored"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501", "E731", "E741"]
+
+[tool.ruff.lint.per-file-ignores]
+"ews/core/*.py" = ["E402"]
+"ews/conversion/*.py" = ["E402"]
+"experiments/**/*.py" = ["E402"]
+"tests/**/*.py" = ["E402"]
+"uea_results/ablation/*.py" = ["E402"]

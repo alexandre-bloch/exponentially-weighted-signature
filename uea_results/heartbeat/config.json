@@ -1,0 +1,98 @@
+{
+  "dataset": {
+    "file": "data/heartbeat_walker/splits/heartbeat_walker_seed0.npz"
+  },
+  "preprocessing": {
+    "dtype": "float32",
+    "path": {
+      "representation": "value",
+      "derivative_order": 0,
+      "derivative_window": 15,
+      "derivative_polyorder": 3,
+      "normalize": true,
+      "normalize_mode": "all_data",
+      "normalize_range": "[0,1]",
+      "per_sample_normalize": false,
+      "per_sample_norm_stat": "std",
+      "basepoint": true,
+      "clock_channel": null
+    },
+    "clock": {
+      "mode": "blended_variation",
+      "alpha": 0.65,
+      "scaling": "[-1,1]"
+    }
+  },
+  "model": {
+    "A": {
+      "parametrization": "unconstrained_rotation",
+      "blocks": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "kinds": [
+        "complex",
+        "complex",
+        "complex",
+        "complex",
+        "complex"
+      ],
+      "learn": true,
+      "init": {
+        "type": "unconstrained_rotation",
+        "mean": 0.0,
+        "variance": 0.004
+      }
+    },
+    "B": {
+      "enabled": true,
+      "out_dim": 10,
+      "_preserve_first_channel": false,
+      "parametrization": "general",
+      "init": {
+        "type": "identity_block",
+        "mean": 0.0,
+        "variance": 1.0
+      },
+      "learn": true
+    },
+    "head_type": "linear",
+    "head_init_scale": 0.35,
+    "readout": "mean",
+    "feature_norm": "learned_gain",
+    "compute": {
+      "van_loan_expm": "euler",
+      "chen_expm": "exact",
+      "M": 4,
+      "terminal_reduce": "tree",
+      "reweighting_mode": "displacement"
+    },
+    "depth": 3
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 8,
+    "num_steps": 25000,
+    "eval_every": 1000,
+    "log_every": 1200,
+    "warmup_steps": 0,
+    "lr_features": 0.0003,
+    "min_lr_features": 0.0003,
+    "lr_head": 0.0003,
+    "min_lr_head": 0.0003,
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "grad_clip_features": 1000000000.0,
+    "grad_clip_head": 1000000000.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.0,
+    "metric": "accuracy",
+    "threshold": 0.5,
+    "early_stopping_patience": 10000,
+    "early_stopping_min_delta": 0.0
+  }
+}

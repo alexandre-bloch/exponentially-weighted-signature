@@ -1,0 +1,500 @@
+{
+ "Heartbeat": {
+  "matched": {
+   "n_cells": 99,
+   "per_depth": {
+    "1": {
+     "cells": 33,
+     "mean_val": 76.26,
+     "mean_test": 73.73,
+     "best_val": 77.7049,
+     "best_val_cell_test": 72.9032,
+     "top5_mean_test": 74.02
+    },
+    "2": {
+     "cells": 33,
+     "mean_val": 77.08,
+     "mean_test": 74.46,
+     "best_val": 78.1421,
+     "best_val_cell_test": 76.3441,
+     "top5_mean_test": 74.41
+    },
+    "3": {
+     "cells": 33,
+     "mean_val": 77.63,
+     "mean_test": 74.9,
+     "best_val": 78.6885,
+     "best_val_cell_test": 76.8817,
+     "top5_mean_test": 75.48
+    }
+   },
+   "paired_val": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 25,
+     "ties": 3,
+     "deeper_worse": 5,
+     "median_gain": 1.09,
+     "mean_gain": 0.82
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 20,
+     "ties": 2,
+     "deeper_worse": 11,
+     "median_gain": 0.55,
+     "mean_gain": 0.55
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 28,
+     "ties": 2,
+     "deeper_worse": 3,
+     "median_gain": 1.64,
+     "mean_gain": 1.37
+    }
+   },
+   "paired_test": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 23,
+     "ties": 2,
+     "deeper_worse": 8,
+     "median_gain": 1.08,
+     "mean_gain": 0.72
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 16,
+     "ties": 1,
+     "deeper_worse": 16,
+     "median_gain": 0.0,
+     "mean_gain": 0.44
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 23,
+     "ties": 4,
+     "deeper_worse": 6,
+     "median_gain": 1.08,
+     "mean_gain": 1.16
+    }
+   }
+  }
+ },
+ "MotorImagery": {
+  "matched": {
+   "n_cells": 99,
+   "per_depth": {
+    "1": {
+     "cells": 33,
+     "mean_val": 55.21,
+     "mean_test": 48.13,
+     "best_val": 60.0,
+     "best_val_cell_test": 49.1228,
+     "top5_mean_test": 50.04
+    },
+    "2": {
+     "cells": 33,
+     "mean_val": 57.12,
+     "mean_test": 49.11,
+     "best_val": 64.2105,
+     "best_val_cell_test": 48.7719,
+     "top5_mean_test": 50.53
+    },
+    "3": {
+     "cells": 33,
+     "mean_val": 59.88,
+     "mean_test": 49.9,
+     "best_val": 64.9123,
+     "best_val_cell_test": 56.7251,
+     "top5_mean_test": 52.05
+    }
+   },
+   "paired_val": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 25,
+     "ties": 0,
+     "deeper_worse": 8,
+     "median_gain": 1.75,
+     "mean_gain": 1.91
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 26,
+     "ties": 0,
+     "deeper_worse": 7,
+     "median_gain": 2.92,
+     "mean_gain": 2.76
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 28,
+     "ties": 0,
+     "deeper_worse": 5,
+     "median_gain": 4.68,
+     "mean_gain": 4.67
+    }
+   },
+   "paired_test": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 20,
+     "ties": 5,
+     "deeper_worse": 8,
+     "median_gain": 1.17,
+     "mean_gain": 0.98
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 18,
+     "ties": 0,
+     "deeper_worse": 15,
+     "median_gain": 0.94,
+     "mean_gain": 0.8
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 19,
+     "ties": 2,
+     "deeper_worse": 12,
+     "median_gain": 1.17,
+     "mean_gain": 1.78
+    }
+   }
+  }
+ },
+ "EthanolConcentration": {
+  "matched": {
+   "n_cells": 99,
+   "per_depth": {
+    "1": {
+     "cells": 33,
+     "mean_val": 34.35,
+     "mean_test": 30.47,
+     "best_val": 58.481,
+     "best_val_cell_test": 53.1646,
+     "top5_mean_test": 51.9
+    },
+    "2": {
+     "cells": 33,
+     "mean_val": 38.19,
+     "mean_test": 33.75,
+     "best_val": 61.0127,
+     "best_val_cell_test": 58.9873,
+     "top5_mean_test": 53.7
+    },
+    "3": {
+     "cells": 33,
+     "mean_val": 38.11,
+     "mean_test": 33.39,
+     "best_val": 60.2532,
+     "best_val_cell_test": 61.519,
+     "top5_mean_test": 56.35
+    }
+   },
+   "paired_val": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 22,
+     "ties": 1,
+     "deeper_worse": 10,
+     "median_gain": 3.8,
+     "mean_gain": 3.84
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 15,
+     "ties": 4,
+     "deeper_worse": 14,
+     "median_gain": 0.0,
+     "mean_gain": -0.08
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 22,
+     "ties": 0,
+     "deeper_worse": 11,
+     "median_gain": 3.38,
+     "mean_gain": 3.76
+    }
+   },
+   "paired_test": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 27,
+     "ties": 0,
+     "deeper_worse": 6,
+     "median_gain": 4.22,
+     "mean_gain": 3.28
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 15,
+     "ties": 1,
+     "deeper_worse": 17,
+     "median_gain": -0.42,
+     "mean_gain": -0.36
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 26,
+     "ties": 0,
+     "deeper_worse": 7,
+     "median_gain": 4.64,
+     "mean_gain": 2.93
+    }
+   }
+  }
+ },
+ "SelfRegulationSCP1": {
+  "matched": {
+   "n_cells": 99,
+   "per_depth": {
+    "1": {
+     "cells": 33,
+     "mean_val": 87.23,
+     "mean_test": 86.45,
+     "best_val": 90.0,
+     "best_val_cell_test": 88.0,
+     "top5_mean_test": 87.58
+    },
+    "2": {
+     "cells": 33,
+     "mean_val": 87.13,
+     "mean_test": 84.79,
+     "best_val": 90.0,
+     "best_val_cell_test": 86.3529,
+     "top5_mean_test": 86.87
+    },
+    "3": {
+     "cells": 33,
+     "mean_val": 84.91,
+     "mean_test": 84.28,
+     "best_val": 87.6191,
+     "best_val_cell_test": 86.1176,
+     "top5_mean_test": 84.33
+    }
+   },
+   "paired_val": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 17,
+     "ties": 2,
+     "deeper_worse": 14,
+     "median_gain": 0.0,
+     "mean_gain": -0.1
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 5,
+     "ties": 1,
+     "deeper_worse": 27,
+     "median_gain": -2.38,
+     "mean_gain": -2.22
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 6,
+     "ties": 1,
+     "deeper_worse": 26,
+     "median_gain": -2.38,
+     "mean_gain": -2.32
+    }
+   },
+   "paired_test": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 3,
+     "ties": 2,
+     "deeper_worse": 28,
+     "median_gain": -1.57,
+     "mean_gain": -1.66
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 12,
+     "ties": 1,
+     "deeper_worse": 20,
+     "median_gain": -1.57,
+     "mean_gain": -0.51
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 5,
+     "ties": 1,
+     "deeper_worse": 27,
+     "median_gain": -2.35,
+     "mean_gain": -2.17
+    }
+   }
+  }
+ },
+ "SelfRegulationSCP2": {
+  "matched": {
+   "n_cells": 99,
+   "per_depth": {
+    "1": {
+     "cells": 33,
+     "mean_val": 53.22,
+     "mean_test": 51.21,
+     "best_val": 57.5439,
+     "best_val_cell_test": 58.2456,
+     "top5_mean_test": 54.74
+    },
+    "2": {
+     "cells": 33,
+     "mean_val": 55.22,
+     "mean_test": 47.53,
+     "best_val": 59.2983,
+     "best_val_cell_test": 49.4737,
+     "top5_mean_test": 48.07
+    },
+    "3": {
+     "cells": 33,
+     "mean_val": 57.45,
+     "mean_test": 50.08,
+     "best_val": 61.4035,
+     "best_val_cell_test": 51.2281,
+     "top5_mean_test": 48.84
+    }
+   },
+   "paired_val": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 24,
+     "ties": 1,
+     "deeper_worse": 8,
+     "median_gain": 2.34,
+     "mean_gain": 2.0
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 26,
+     "ties": 2,
+     "deeper_worse": 5,
+     "median_gain": 2.22,
+     "mean_gain": 2.23
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 29,
+     "ties": 0,
+     "deeper_worse": 4,
+     "median_gain": 4.33,
+     "mean_gain": 4.22
+    }
+   },
+   "paired_test": {
+    "n1->n2": {
+     "configs": 33,
+     "deeper_better": 10,
+     "ties": 0,
+     "deeper_worse": 23,
+     "median_gain": -3.51,
+     "mean_gain": -3.69
+    },
+    "n2->n3": {
+     "configs": 33,
+     "deeper_better": 26,
+     "ties": 0,
+     "deeper_worse": 7,
+     "median_gain": 2.92,
+     "mean_gain": 2.56
+    },
+    "n1->n3": {
+     "configs": 33,
+     "deeper_better": 14,
+     "ties": 0,
+     "deeper_worse": 19,
+     "median_gain": -0.94,
+     "mean_gain": -1.13
+    }
+   }
+  }
+ },
+ "EigenWorms": {
+  "matched": {
+   "n_cells": 96,
+   "per_depth": {
+    "1": {
+     "cells": 32,
+     "mean_val": 50.18,
+     "mean_test": 55.86,
+     "best_val": 78.2857,
+     "best_val_cell_test": 76.6667,
+     "top5_mean_test": 76.0
+    },
+    "2": {
+     "cells": 32,
+     "mean_val": 69.71,
+     "mean_test": 71.17,
+     "best_val": 94.2857,
+     "best_val_cell_test": 88.8889,
+     "top5_mean_test": 90.67
+    },
+    "3": {
+     "cells": 32,
+     "mean_val": 69.5,
+     "mean_test": 68.99,
+     "best_val": 93.7143,
+     "best_val_cell_test": 87.2222,
+     "top5_mean_test": 88.22
+    }
+   },
+   "paired_val": {
+    "n1->n2": {
+     "configs": 32,
+     "deeper_better": 29,
+     "ties": 0,
+     "deeper_worse": 3,
+     "median_gain": 10.67,
+     "mean_gain": 19.52
+    },
+    "n2->n3": {
+     "configs": 32,
+     "deeper_better": 18,
+     "ties": 0,
+     "deeper_worse": 14,
+     "median_gain": 0.95,
+     "mean_gain": -0.21
+    },
+    "n1->n3": {
+     "configs": 32,
+     "deeper_better": 28,
+     "ties": 1,
+     "deeper_worse": 3,
+     "median_gain": 11.14,
+     "mean_gain": 19.32
+    }
+   },
+   "paired_test": {
+    "n1->n2": {
+     "configs": 32,
+     "deeper_better": 23,
+     "ties": 0,
+     "deeper_worse": 9,
+     "median_gain": 9.07,
+     "mean_gain": 15.31
+    },
+    "n2->n3": {
+     "configs": 32,
+     "deeper_better": 10,
+     "ties": 0,
+     "deeper_worse": 22,
+     "median_gain": -1.85,
+     "mean_gain": -2.18
+    },
+    "n1->n3": {
+     "configs": 32,
+     "deeper_better": 20,
+     "ties": 0,
+     "deeper_worse": 12,
+     "median_gain": 8.15,
+     "mean_gain": 13.13
+    }
+   }
+  }
+ }
+}

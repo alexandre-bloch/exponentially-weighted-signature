@@ -1,0 +1,69 @@
+{
+  "dataset": {
+    "file": "data/sde_d/sde_d_EFM_seed0.npz"
+  },
+  "preprocessing": {
+    "dtype": "float32",
+    "normalize_targets": true,
+    "target_range": "[0,1]",
+    "path": {
+      "representation": "value",
+      "derivative_order": 0,
+      "derivative_window": 15,
+      "derivative_polyorder": 3,
+      "normalize": false,
+      "normalize_mode": "train_only",
+      "normalize_range": "[0,1]",
+      "per_sample_normalize": false,
+      "per_sample_norm_stat": "std",
+      "basepoint": false,
+      "clock_channel": "main"
+    },
+    "clock": {
+      "mode": "time",
+      "scaling": "none"
+    }
+  },
+  "model": {
+    "A": {
+      "parametrization": "general",
+      "init": {
+        "type": "general",
+        "mean": 0.0,
+        "variance": 0.0001
+      },
+      "learn": true
+    },
+    "B": {
+      "enabled": false
+    },
+    "head_type": "linear",
+    "head_init_scale": 0.004400827595457666,
+    "compute": {
+      "van_loan_expm": "exact",
+      "chen_expm": "exact",
+      "M": 10,
+      "reweighting_mode": "displacement_uniform"
+    },
+    "depth": 2
+  },
+  "training": {
+    "seed": 100,
+    "batch_size": 32,
+    "num_steps": 30000,
+    "eval_every": 500,
+    "log_every": 500,
+    "warmup_steps": 500,
+    "lr_features": 0.013950178056980851,
+    "min_lr_features": 0.00021204106368810614,
+    "lr_head": 0.0011524618634905026,
+    "min_lr_head": 1.214990271009331e-06,
+    "weight_decay_features": 0.00025924164333006663,
+    "weight_decay_head": 0.0003923317253983247,
+    "grad_clip_features": 2849.148717857248,
+    "grad_clip_head": 12985.791318247842,
+    "lambda1": 0.005740668242727057,
+    "lambda2": 0.0063994262461978,
+    "early_stopping_patience": 0
+  }
+}

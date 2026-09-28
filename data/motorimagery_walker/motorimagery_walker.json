@@ -1,0 +1,23 @@
+{
+  "dataset": "MotorImagery",
+  "task_type": "multiclass",
+  "n_classes": 2,
+  "class_names": [
+    "finger",
+    "tongue"
+  ],
+  "n_train": 264,
+  "n_val": 57,
+  "n_test": 57,
+  "T": 3000,
+  "d": 64,
+  "seed": 0,
+  "walker_seed": 2345,
+  "N_pool": 378,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "deduplicated": true,
+  "split": "walker_jax_70_15_15",
+  "protocol": "walker_exact_jax_rng",
+  "non_degenerate": true
+}

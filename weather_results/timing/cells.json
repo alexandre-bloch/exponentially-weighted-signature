@@ -1,0 +1,104 @@
+[
+ {
+  "cell": "batch16",
+  "config": "weather_results/config.json",
+  "seed": 2345,
+  "params": 18669,
+  "batch": 16,
+  "a_param": "jordan_repeated",
+  "jordan": "complex4",
+  "m": 64,
+  "hidden": 64,
+  "steps": 4000,
+  "print_steps": 1000,
+  "early_stop": "off",
+  "intervals_train_only_s": [
+   35.113,
+   9.05,
+   8.742,
+   8.951
+  ],
+  "s_per_1000_train_only": {
+   "first": 35.11,
+   "median": 8.95,
+   "min": 8.74,
+   "max": 9.05
+  },
+  "allocator_peak_MB": 364.5,
+  "nvidia_smi_peak_MB": 1722,
+  "gpu": "H100 NVL",
+  "env": {
+   "jax": "0.9.0",
+   "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+   "XLA_FLAGS": "--xla_gpu_autotune_level=4"
+  }
+ },
+ {
+  "cell": "batch16_repeat",
+  "config": "weather_results/config.json",
+  "seed": 2345,
+  "params": 18669,
+  "batch": 16,
+  "a_param": "jordan_repeated",
+  "jordan": "complex4",
+  "m": 64,
+  "hidden": 64,
+  "steps": 4000,
+  "print_steps": 1000,
+  "early_stop": "off",
+  "intervals_train_only_s": [
+   35.634,
+   9.215,
+   9.035,
+   10.327
+  ],
+  "s_per_1000_train_only": {
+   "first": 35.63,
+   "median": 9.22,
+   "min": 9.04,
+   "max": 10.33
+  },
+  "allocator_peak_MB": 364.5,
+  "nvidia_smi_peak_MB": 1722,
+  "gpu": "H100 NVL",
+  "env": {
+   "jax": "0.9.0",
+   "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+   "XLA_FLAGS": "--xla_gpu_autotune_level=4"
+  }
+ },
+ {
+  "cell": "batch4",
+  "config": "weather_results/config.json",
+  "seed": 2345,
+  "params": 18669,
+  "batch": 4,
+  "a_param": "jordan_repeated",
+  "jordan": "complex4",
+  "m": 64,
+  "hidden": 64,
+  "steps": 4000,
+  "print_steps": 1000,
+  "early_stop": "off",
+  "intervals_train_only_s": [
+   36.735,
+   7.738,
+   8.035,
+   7.736
+  ],
+  "s_per_1000_train_only": {
+   "first": 36.74,
+   "median": 7.74,
+   "min": 7.74,
+   "max": 8.04
+  },
+  "allocator_peak_MB": 288.9,
+  "nvidia_smi_peak_MB": 1210,
+  "gpu": "H100 NVL",
+  "env": {
+   "jax": "0.9.0",
+   "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+   "XLA_FLAGS": "--xla_gpu_autotune_level=4"
+  }
+ }
+]

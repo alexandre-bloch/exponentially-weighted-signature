@@ -1,0 +1,42 @@
+{
+ "data": {
+  "sample_rate_hz": 200,
+  "channels": 16,
+  "window_samples": 2000,
+  "scaling": "p95_abs",
+  "val_fraction": 0.15,
+  "split_seed": 0,
+  "path": "increment"
+ },
+ "model": {
+  "heads": 8,
+  "m": 8,
+  "depth": 2,
+  "family": "cplx4",
+  "lift_init": "identity_block",
+  "lambda_mean": -3.5098,
+  "lambda_std": 0.33975,
+  "omega_hi": 1.1894,
+  "clock": "blended_learn",
+  "alpha": 0.9966,
+  "feature": "signature",
+  "pool": "mean",
+  "transform": "none",
+  "feature_norm": "percoord",
+  "dropout": 0.1,
+  "head": "mlp",
+  "head_depth": 1,
+  "head_width": 32
+ },
+ "training": {
+  "optimizer": "adamw",
+  "lr": 0.004,
+  "lr_schedule": "constant",
+  "warmup": 0,
+  "wd": 0.001,
+  "grad_clip": 1.0,
+  "batch": 64,
+  "steps": 5000,
+  "eval_every": 1000
+ }
+}

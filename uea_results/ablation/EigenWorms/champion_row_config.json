@@ -1,0 +1,115 @@
+{
+  "dataset": {
+    "file": "data/eigenworms/eigenworms.npz"
+  },
+  "preprocessing": {
+    "dtype": "float32",
+    "path": {
+      "representation": "value",
+      "derivative_order": 0,
+      "derivative_window": 15,
+      "derivative_polyorder": 3,
+      "normalize": true,
+      "normalize_mode": "all_data",
+      "normalize_range": "[0,1]",
+      "per_sample_normalize": false,
+      "per_sample_norm_stat": "std",
+      "basepoint": false,
+      "clock_channel": "main"
+    },
+    "clock": {
+      "mode": "clamped_gate",
+      "scaling": "none",
+      "source": "block_input",
+      "normalize": "constant",
+      "norm_constant": 1.299682963044348,
+      "gate_init_scale": 0.7902724958928227,
+      "gate_init_bias": [
+        -0.6268563389768782,
+        -0.3107473406197491,
+        0.00536165773737996,
+        0.321470656094509
+      ],
+      "gate_K": 4,
+      "gate_in_scale": 1449.7872884248034
+    },
+    "append_clock": null
+  },
+  "model": {
+    "A": {
+      "parametrization": "jordan_repeated",
+      "learn": true,
+      "blocks": [
+        4,
+        4
+      ],
+      "kinds": [
+        "complex",
+        "complex"
+      ],
+      "init": {
+        "type": "jordan_repeated",
+        "mean": -1.0732505143486941,
+        "variance": 0.3163607951725365
+      },
+      "omega_log_uniform_hi": 0.07893429161683238
+    },
+    "B": {
+      "enabled": true,
+      "out_dim": 8,
+      "_preserve_first_channel": true,
+      "parametrization": "general",
+      "init": {
+        "type": "identity_block",
+        "mean": 0.0,
+        "variance": 1.0
+      },
+      "learn": true
+    },
+    "head_type": "linear",
+    "head_init_scale": 0.3680000752068971,
+    "readout": "mean",
+    "feature_norm": "learned_gain",
+    "compute": {
+      "combine": "block_kernel",
+      "leaf": "jordan_closed",
+      "van_loan_expm": "euler",
+      "chen_expm": "exact",
+      "M": 4,
+      "terminal_reduce": "tree",
+      "reweighting_mode": "displacement"
+    },
+    "depth": 2
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 4,
+    "num_steps": 6000,
+    "eval_every": 1000,
+    "log_every": 6000,
+    "warmup_steps": 0,
+    "lr_features": 0.0045453225545316125,
+    "min_lr_features": 0.0045453225545316125,
+    "lr_head": 0.0045453225545316125,
+    "min_lr_head": 0.0045453225545316125,
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "grad_clip_features": 1000000000.0,
+    "grad_clip_head": 1000000000.0,
+    "lambda1": 0.0,
+    "lambda2": 0.0,
+    "label_smoothing": 0.0,
+    "metric": "accuracy",
+    "threshold": 0.5,
+    "early_stopping_patience": 1000000000,
+    "early_stopping_min_delta": 0.0
+  },
+  "dataset_file_stem": "eigenworms_walker",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,25 @@
+chex==0.1.91
+equinox==0.13.2
+jax==0.9.0
+jax-cuda12-pjrt==0.9.0
+jax-cuda12-plugin==0.9.0
+jax_dataclasses==1.6.2
+jaxlib==0.9.0
+jaxopt==0.8.5
+jaxtyping==0.3.3
+matplotlib==3.10.7
+matplotlib-inline==0.1.7
+ml_dtypes==0.5.3
+numpy==2.3.3
+optax==0.2.6
+pandas==2.3.3
+scikit-base==0.13.0
+scikit-learn==1.7.2
+scipy==1.16.2
+signax==0.2.1
+tqdm==4.67.1
+typing_extensions==4.15.0
+umap-learn==0.5.11
+torch==2.8.0
+abstract_algebra @ git+https://github.com/jopetty/abstract_algebra.git
+pytest==9.1.1

@@ -1,0 +1,47 @@
+[
+ {
+  "seed": 2345,
+  "f32_stored": 67.74193048477173,
+  "f64_before": 66.12903225806451,
+  "f64_after": 66.12903225806451,
+  "delta": 0.0,
+  "max_abs_logit_residual": 8.179568133925841e-14,
+  "max_rel_logit_residual": 1.4069521995997704e-12
+ },
+ {
+  "seed": 3456,
+  "f32_stored": 82.2580635547638,
+  "f64_before": 80.64516129032258,
+  "f64_after": 80.64516129032258,
+  "delta": 0.0,
+  "max_abs_logit_residual": 9.60898027813073e-14,
+  "max_rel_logit_residual": 2.884894373886079e-12
+ },
+ {
+  "seed": 4567,
+  "f32_stored": 79.03225421905518,
+  "f64_before": 80.64516129032258,
+  "f64_after": 80.64516129032258,
+  "delta": 0.0,
+  "max_abs_logit_residual": 7.971401316808624e-14,
+  "max_rel_logit_residual": 1.485026890645864e-12
+ },
+ {
+  "seed": 5678,
+  "f32_stored": 72.58064150810242,
+  "f64_before": 75.80645161290323,
+  "f64_after": 75.80645161290323,
+  "delta": 0.0,
+  "max_abs_logit_residual": 6.294964549624638e-14,
+  "max_rel_logit_residual": 4.512936469060021e-13
+ },
+ {
+  "seed": 6789,
+  "f32_stored": 66.12902879714966,
+  "f64_before": 69.35483870967742,
+  "f64_after": 69.35483870967742,
+  "delta": 0.0,
+  "max_abs_logit_residual": 4.363176486776865e-14,
+  "max_rel_logit_residual": 4.2966381909753116e-13
+ }
+]

@@ -1,0 +1,388 @@
+{
+ "by_dataset": {
+  "EigenWorms": {
+   "by_depth": {
+    "1": {
+     "per_seed_val": [
+      91.43,
+      97.14,
+      82.86,
+      94.29,
+      88.57
+     ],
+     "per_seed_test": [
+      77.78,
+      83.33,
+      88.89,
+      86.11,
+      91.67
+     ],
+     "mean_val": 90.86,
+     "val_population_sd": 4.91,
+     "mean_test": 85.56,
+     "test_population_sd": 4.78
+    },
+    "2": {
+     "per_seed_val": [
+      94.29,
+      97.14,
+      91.43,
+      97.14,
+      100.0
+     ],
+     "per_seed_test": [
+      91.67,
+      94.44,
+      94.44,
+      91.67,
+      94.44
+     ],
+     "mean_val": 96.0,
+     "val_population_sd": 2.91,
+     "mean_test": 93.33,
+     "test_population_sd": 1.36
+    },
+    "3": {
+     "per_seed_val": [
+      94.29,
+      100.0,
+      85.71,
+      94.29,
+      94.29
+     ],
+     "per_seed_test": [
+      94.44,
+      94.44,
+      97.22,
+      88.89,
+      86.11
+     ],
+     "mean_val": 93.72,
+     "val_population_sd": 4.57,
+     "mean_test": 92.22,
+     "test_population_sd": 4.08
+    }
+   }
+  },
+  "Ethanol": {
+   "by_depth": {
+    "1": {
+     "per_seed_val": [
+      83.54,
+      50.63,
+      78.48,
+      78.48,
+      54.43
+     ],
+     "per_seed_test": [
+      78.48,
+      62.03,
+      69.62,
+      69.62,
+      51.9
+     ],
+     "mean_val": 69.11,
+     "val_population_sd": 13.72,
+     "mean_test": 66.33,
+     "test_population_sd": 8.9
+    },
+    "2": {
+     "per_seed_val": [
+      82.28,
+      62.03,
+      74.68,
+      83.54,
+      77.22
+     ],
+     "per_seed_test": [
+      77.22,
+      64.56,
+      73.42,
+      75.95,
+      68.35
+     ],
+     "mean_val": 75.95,
+     "val_population_sd": 7.68,
+     "mean_test": 71.9,
+     "test_population_sd": 4.76
+    },
+    "3": {
+     "per_seed_val": [
+      82.28,
+      62.03,
+      74.68,
+      74.68,
+      73.42
+     ],
+     "per_seed_test": [
+      77.22,
+      72.15,
+      72.15,
+      69.62,
+      65.82
+     ],
+     "mean_val": 73.42,
+     "val_population_sd": 6.5,
+     "mean_test": 71.39,
+     "test_population_sd": 3.72
+    }
+   }
+  },
+  "Heartbeat": {
+   "by_depth": {
+    "1": {
+     "per_seed_val": [
+      72.13,
+      81.97,
+      77.05,
+      73.77,
+      80.33
+     ],
+     "per_seed_test": [
+      64.52,
+      80.65,
+      79.03,
+      79.03,
+      77.42
+     ],
+     "mean_val": 77.05,
+     "val_population_sd": 3.74,
+     "mean_test": 76.13,
+     "test_population_sd": 5.89
+    },
+    "2": {
+     "per_seed_val": [
+      70.49,
+      83.61,
+      77.05,
+      73.77,
+      67.21
+     ],
+     "per_seed_test": [
+      72.58,
+      80.65,
+      79.03,
+      77.42,
+      77.42
+     ],
+     "mean_val": 74.43,
+     "val_population_sd": 5.64,
+     "mean_test": 77.42,
+     "test_population_sd": 2.7
+    },
+    "3": {
+     "per_seed_val": [
+      75.41,
+      86.89,
+      80.33,
+      75.41,
+      70.49
+     ],
+     "per_seed_test": [
+      72.58,
+      79.03,
+      79.03,
+      83.87,
+      85.48
+     ],
+     "mean_val": 77.71,
+     "val_population_sd": 5.55,
+     "mean_test": 80.0,
+     "test_population_sd": 4.52
+    }
+   }
+  },
+  "Motor": {
+   "by_depth": {
+    "1": {
+     "per_seed_val": [
+      54.39,
+      57.89,
+      52.63,
+      57.89,
+      63.16
+     ],
+     "per_seed_test": [
+      38.6,
+      56.14,
+      57.89,
+      50.88,
+      49.12
+     ],
+     "mean_val": 57.19,
+     "val_population_sd": 3.61,
+     "mean_test": 50.53,
+     "test_population_sd": 6.79
+    },
+    "2": {
+     "per_seed_val": [
+      49.12,
+      61.4,
+      59.65,
+      54.39,
+      66.67
+     ],
+     "per_seed_test": [
+      43.86,
+      56.14,
+      61.4,
+      57.89,
+      43.86
+     ],
+     "mean_val": 58.25,
+     "val_population_sd": 6.02,
+     "mean_test": 52.63,
+     "test_population_sd": 7.36
+    },
+    "3": {
+     "per_seed_val": [
+      68.42,
+      64.91,
+      68.42,
+      64.91,
+      63.16
+     ],
+     "per_seed_test": [
+      59.65,
+      57.89,
+      64.91,
+      54.39,
+      68.42
+     ],
+     "mean_val": 65.96,
+     "val_population_sd": 2.11,
+     "mean_test": 61.05,
+     "test_population_sd": 5.01
+    }
+   }
+  },
+  "SCP1": {
+   "by_depth": {
+    "1": {
+     "per_seed_val": [
+      86.9,
+      92.86,
+      88.1,
+      92.86,
+      89.29
+     ],
+     "per_seed_test": [
+      88.24,
+      87.06,
+      87.06,
+      78.82,
+      89.41
+     ],
+     "mean_val": 90.0,
+     "val_population_sd": 2.45,
+     "mean_test": 86.12,
+     "test_population_sd": 3.75
+    },
+    "2": {
+     "per_seed_val": [
+      85.71,
+      95.24,
+      88.1,
+      92.86,
+      89.29
+     ],
+     "per_seed_test": [
+      88.24,
+      89.41,
+      87.06,
+      82.35,
+      88.24
+     ],
+     "mean_val": 90.24,
+     "val_population_sd": 3.4,
+     "mean_test": 87.06,
+     "test_population_sd": 2.47
+    },
+    "3": {
+     "per_seed_val": [
+      83.33,
+      82.14,
+      85.71,
+      91.67,
+      80.95
+     ],
+     "per_seed_test": [
+      77.65,
+      82.35,
+      83.53,
+      82.35,
+      82.35
+     ],
+     "mean_val": 84.76,
+     "val_population_sd": 3.8,
+     "mean_test": 81.65,
+     "test_population_sd": 2.05
+    }
+   }
+  },
+  "SCP2": {
+   "by_depth": {
+    "1": {
+     "per_seed_val": [
+      54.39,
+      59.65,
+      54.39,
+      64.91,
+      57.89
+     ],
+     "per_seed_test": [
+      64.91,
+      59.65,
+      49.12,
+      57.89,
+      61.4
+     ],
+     "mean_val": 58.25,
+     "val_population_sd": 3.9,
+     "mean_test": 58.59,
+     "test_population_sd": 5.28
+    },
+    "2": {
+     "per_seed_val": [
+      61.4,
+      59.65,
+      50.88,
+      57.89,
+      61.4
+     ],
+     "per_seed_test": [
+      49.12,
+      40.35,
+      50.88,
+      40.35,
+      56.14
+     ],
+     "mean_val": 58.24,
+     "val_population_sd": 3.91,
+     "mean_test": 47.37,
+     "test_population_sd": 6.18
+    },
+    "3": {
+     "per_seed_val": [
+      63.16,
+      61.4,
+      56.14,
+      63.16,
+      63.16
+     ],
+     "per_seed_test": [
+      66.67,
+      50.88,
+      50.88,
+      56.14,
+      57.89
+     ],
+     "mean_val": 61.4,
+     "val_population_sd": 2.72,
+     "mean_test": 56.49,
+     "test_population_sd": 5.81
+    }
+   }
+  }
+ }
+}

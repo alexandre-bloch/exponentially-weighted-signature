@@ -1,0 +1,91 @@
+{
+  "dataset": "SelfRegulationSCP2",
+  "dataset_file_stem": "selfregulationscp2_walker",
+  "selected": "b14_head0.06_avar0.006",
+  "grid_size": 18,
+  "swept_axes": {
+    "head_init_scale": [
+      0.05,
+      0.055,
+      0.06
+    ],
+    "lambda2": [
+      0.025,
+      0.03
+    ],
+    "A_init_variance": [
+      0.004,
+      0.005,
+      0.006
+    ]
+  },
+  "fixed_model": {
+    "A_parametrization": "skew_symmetric",
+    "B_out_dim": 14,
+    "ews_depth": 3,
+    "M": 4,
+    "readout": "terminal",
+    "head_type": "linear",
+    "feature_norm": "learned_gain",
+    "add_basepoint": false
+  },
+  "fixed_preprocessing": {
+    "path_representation": "value",
+    "path_derivative_order": 0,
+    "normalize_paths": true,
+    "normalize_mode": "all_data",
+    "normalize_range": "[-1,1]",
+    "add_basepoint": false,
+    "clock_mode": "blended_quad_variation",
+    "clock_alpha": 0.6124882756267624,
+    "clock_scaling": "[-1,1]"
+  },
+  "fixed_training": {
+    "optimizer": "adam",
+    "lr_features": 0.0005,
+    "lr_head": 0.0005,
+    "lr_schedule": "constant",
+    "weight_decay_features": 0.0,
+    "weight_decay_head": 0.0,
+    "lambda1": 0.0,
+    "label_smoothing": 0.0,
+    "batch_size": 8,
+    "num_steps": 25000,
+    "early_stopping_patience": 10000,
+    "grad_clip": 0.0
+  },
+  "regime": {
+    "autotune": "off",
+    "deterministic_ops": "on"
+  },
+  "selection": {
+    "metric": "best_val_accuracy",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "tiebreak": "val_loss"
+  },
+  "result": {
+    "method_B_5seed_val": 61.4,
+    "method_B_5seed_test": 56.49,
+    "test_population_sd": 5.81,
+    "per_seed_val": [
+      63.16,
+      61.4,
+      56.14,
+      63.16,
+      63.16
+    ],
+    "per_seed_test": [
+      66.67,
+      50.88,
+      50.88,
+      56.14,
+      57.89
+    ]
+  }
+}

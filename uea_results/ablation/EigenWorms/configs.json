@@ -1,0 +1,369 @@
+{
+ "dataset": "EigenWorms",
+ "seed": 20261936,
+ "n_grid_cells": 2250,
+ "axes": {
+  "lr": [
+   0.002,
+   0.006,
+   0.02,
+   0.06,
+   0.2
+  ],
+  "d_level": [
+   0,
+   1,
+   2
+  ],
+  "damp": [
+   50.0,
+   150.0,
+   500.0,
+   1500.0,
+   5000.0
+  ],
+  "head": [
+   0.05,
+   0.1,
+   0.2,
+   0.35,
+   0.7
+  ],
+  "readout": [
+   "mean",
+   "max",
+   "terminal"
+  ],
+  "alpha": [
+   0.0,
+   0.5
+  ]
+ },
+ "d_ladder": {
+  "1": [
+   8,
+   12,
+   16
+  ],
+  "2": [
+   8,
+   12,
+   16
+  ],
+  "3": [
+   8,
+   8,
+   8
+  ]
+ },
+ "depths": [
+  1,
+  2,
+  3
+ ],
+ "seeds": [
+  0,
+  1
+ ],
+ "steps": 6000,
+ "configs": [
+  {
+   "lr": 0.02,
+   "d_level": null,
+   "d_champ": 8,
+   "head": 0.08648254183228872,
+   "readout": "mean",
+   "champion": true,
+   "damp": 500.0,
+   "alpha": 0.408502273746444
+  },
+  {
+   "lr": 0.002,
+   "d_level": 1,
+   "damp": 500.0,
+   "head": 0.7,
+   "readout": "max",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.002,
+   "d_level": 0,
+   "damp": 50.0,
+   "head": 0.1,
+   "readout": "max",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.002,
+   "d_level": 1,
+   "damp": 500.0,
+   "head": 0.1,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 0,
+   "damp": 5000.0,
+   "head": 0.1,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.06,
+   "d_level": 2,
+   "damp": 5000.0,
+   "head": 0.1,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 2,
+   "damp": 50.0,
+   "head": 0.1,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.06,
+   "d_level": 0,
+   "damp": 150.0,
+   "head": 0.2,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 1,
+   "damp": 1500.0,
+   "head": 0.7,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 1,
+   "damp": 50.0,
+   "head": 0.2,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 0,
+   "damp": 5000.0,
+   "head": 0.7,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 1,
+   "damp": 1500.0,
+   "head": 0.1,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.02,
+   "d_level": 0,
+   "damp": 5000.0,
+   "head": 0.7,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 1,
+   "damp": 150.0,
+   "head": 0.2,
+   "readout": "mean",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.002,
+   "d_level": 2,
+   "damp": 500.0,
+   "head": 0.05,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.06,
+   "d_level": 1,
+   "damp": 1500.0,
+   "head": 0.1,
+   "readout": "max",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 1,
+   "damp": 1500.0,
+   "head": 0.35,
+   "readout": "max",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 1,
+   "damp": 1500.0,
+   "head": 0.1,
+   "readout": "max",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 2,
+   "damp": 150.0,
+   "head": 0.2,
+   "readout": "mean",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.02,
+   "d_level": 1,
+   "damp": 500.0,
+   "head": 0.05,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 1,
+   "damp": 1500.0,
+   "head": 0.2,
+   "readout": "max",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.002,
+   "d_level": 2,
+   "damp": 5000.0,
+   "head": 0.1,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.002,
+   "d_level": 0,
+   "damp": 1500.0,
+   "head": 0.35,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.02,
+   "d_level": 0,
+   "damp": 1500.0,
+   "head": 0.35,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.02,
+   "d_level": 2,
+   "damp": 500.0,
+   "head": 0.7,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 2,
+   "damp": 5000.0,
+   "head": 0.2,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 0,
+   "damp": 50.0,
+   "head": 0.2,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.06,
+   "d_level": 2,
+   "damp": 50.0,
+   "head": 0.2,
+   "readout": "terminal",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 0,
+   "damp": 150.0,
+   "head": 0.7,
+   "readout": "terminal",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.02,
+   "d_level": 1,
+   "damp": 5000.0,
+   "head": 0.05,
+   "readout": "mean",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.2,
+   "d_level": 1,
+   "damp": 50.0,
+   "head": 0.2,
+   "readout": "mean",
+   "alpha": 0.0,
+   "champion": false
+  },
+  {
+   "lr": 0.006,
+   "d_level": 0,
+   "damp": 500.0,
+   "head": 0.2,
+   "readout": "max",
+   "alpha": 0.5,
+   "champion": false
+  },
+  {
+   "lr": 0.002,
+   "d_level": 1,
+   "damp": 500.0,
+   "head": 0.2,
+   "readout": "max",
+   "alpha": 0.0,
+   "champion": false
+  }
+ ]
+}

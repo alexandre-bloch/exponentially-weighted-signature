@@ -1,0 +1,141 @@
+{
+ "config": {
+  "dataset": {
+   "task": "parity"
+  },
+  "model": {
+   "num_blocks": 2,
+   "hidden_dim": 128,
+   "tokens": true,
+   "head": "seq2seq",
+   "final_norm": false,
+   "dtype": "float32",
+   "graded_eps_init": "calibrated",
+   "token_cache": true,
+   "block": {
+    "m": 64,
+    "n": 1,
+    "M": 4,
+    "norm_placement": "pre",
+    "graded_norm": "live_rms",
+    "channel_stage": "gelu_glu",
+    "ff_mult": 4,
+    "output_gate": false,
+    "dropout_rate": 0.0,
+    "basepoint": true,
+    "path_mode": "increment",
+    "clock": {
+     "mode": "token_gated",
+     "scaling": "none",
+     "normalize": "constant",
+     "norm_constant": 29.4837,
+     "source": "block_input",
+     "stop_gradient": false
+    },
+    "A": {
+     "parametrization": "bounded_rotation",
+     "init": {
+      "type": "sig",
+      "sigma_range": 0.266171
+     }
+    },
+    "B": {
+     "enabled": true,
+     "out_dim": 64,
+     "parametrization": "general",
+     "init": {
+      "type": "identity_block",
+      "mean": 0.0,
+      "variance": 1.0
+     }
+    },
+    "reweighting_mode": "displacement",
+    "terminal_reduce": "tree",
+    "van_loan_expm": "exact",
+    "chen_expm": "exact"
+   },
+   "blocks": [
+    {},
+    {
+     "m": 24,
+     "n": 1,
+     "M": 4,
+     "norm_placement": "pre",
+     "graded_norm": "live_rms",
+     "channel_stage": "gelu_glu",
+     "ff_mult": 4,
+     "output_gate": false,
+     "dropout_rate": 0.0,
+     "basepoint": true,
+     "path_mode": "increment",
+     "clock": {
+      "mode": "blended_variation",
+      "alpha": 0.0,
+      "scaling": "none",
+      "normalize": "constant",
+      "norm_constant": 29.4837,
+      "source": "block_input",
+      "stop_gradient": false
+     },
+     "A": {
+      "parametrization": "skew_symmetric",
+      "init": {
+       "type": "skew_symmetric",
+       "mean": 0.0,
+       "variance": 1.0
+      }
+     },
+     "B": {
+      "enabled": true,
+      "out_dim": 24,
+      "parametrization": "general",
+      "init": {
+       "type": "identity_block",
+       "mean": 0.0,
+       "variance": 1.0
+      }
+     },
+     "reweighting_mode": "displacement",
+     "terminal_reduce": "tree",
+     "van_loan_expm": "exact",
+     "chen_expm": "exact",
+     "leaf": "series",
+     "series_q": 24
+    }
+   ]
+  },
+  "training": {
+   "batch_size": 256,
+   "num_steps": 100001,
+   "print_steps": 5000,
+   "early_stop_threshold": 0.9995,
+   "seed": 1234,
+   "weight_decay_embedding": 0.0,
+   "weight_decay_others": 0.01,
+   "vf_A_norm_lambda": 0.0,
+   "grad_clip": 1.0,
+   "final_lr": 1e-05,
+   "learning_rate": 0.00488239,
+   "warmup_fraction": 0.1,
+   "schedule": "cosine",
+   "ema_eval": 0.999,
+   "label_smoothing": 0.05
+  }
+ },
+ "run": 1,
+ "seed": 1235,
+ "data_dim": 3,
+ "label_dim": 3,
+ "calibration": {
+  "time_denominator": 255.0,
+  "graded_eps": [
+   [
+    0.09778939247131348
+   ],
+   [
+    0.024729814529418945
+   ]
+  ]
+ },
+ "n_params": 90554
+}

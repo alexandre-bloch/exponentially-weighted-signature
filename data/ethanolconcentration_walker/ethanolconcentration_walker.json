@@ -1,0 +1,25 @@
+{
+  "dataset": "EthanolConcentration",
+  "task_type": "multiclass",
+  "n_classes": 4,
+  "class_names": [
+    "E35",
+    "E38",
+    "E40",
+    "E45"
+  ],
+  "n_train": 366,
+  "n_val": 79,
+  "n_test": 79,
+  "T": 1751,
+  "d": 3,
+  "seed": 0,
+  "walker_seed": 2345,
+  "N_pool": 524,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "deduplicated": true,
+  "split": "walker_jax_70_15_15",
+  "protocol": "walker_exact_jax_rng",
+  "non_degenerate": true
+}
